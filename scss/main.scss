@@ -1,0 +1,281 @@
+$color_1: #000;
+$color_2: white;
+$color_3: #7E8CD8;
+$color_4: #fff;
+$font-family_1: montserrat;
+$font-family_2: 'Montserrat';
+$background-color_1: #7E8CD8;
+$background-color_2: #edf2fb;
+$background-color_3: #b8c0ff;
+$background-color_4: #04AA6D;
+$background-color_5: #45a049;
+
+/* Clear floats after the columns */
+body {
+	margin: 0px;
+	font-family: $font-family_1;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 100px 15px 100px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.menu {
+	text-decoration: none;
+	color: $color_1;
+}
+nav {
+	padding-top: 10px;
+}
+p {
+	font-weight: 300;
+}
+ul {
+	list-style: none;
+	display: flex;
+}
+li {
+	padding-right: 30px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+img.logo {
+	height: 80px;
+	width: 80px;
+}
+button.search-button {
+	padding: 4px;
+	background-color: $background-color_1;
+	color: $color_2;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+i.fas.fa-search {
+	font-size: 12px;
+}
+.search-container {
+	padding-top: 24px;
+	input.search {
+		border: none;
+		border-bottom: 1px solid #e5e5e5;
+		padding: 5px;
+		width: 80%;
+	}
+}
+.top-bar {
+	border-bottom: 1px solid #e5e5e5;
+	display: flex;
+	justify-content: space-between;
+	a {
+		text-decoration: none;
+		color: $color_1;
+	}
+}
+.top-bar-contact {
+	font-size: 12px;
+	color: $color_1;
+	text-align: right;
+	padding: 10px 100px 10px 10px;
+	height: 15px;
+	font-weight: 300;
+}
+.top-bar-social-media {
+	padding: 10px 10px 10px 100px;
+}
+#call {
+	padding-right: 20px;
+}
+.social-media {
+	color: $color_3;
+	padding-right: 10px;
+}
+#video-slider {
+	width: 100%;
+	overflow: hidden;
+}
+.video-container {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+.video {
+	width: 100%;
+	height: auto;
+}
+.column {
+	float: left;
+	width: 50%;
+}
+.row {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+.about-heading {
+	text-align: center;
+	font-size: 40px;
+	padding-top: 50px;
+}
+.courses-heading {
+	text-align: center;
+	font-size: 40px;
+	padding-top: 50px;
+}
+.about-section {
+	padding-left: 50px 100px 50px 100px;
+}
+.about-image {
+	width: 600px;
+	height: 600px;
+}
+.about-us {
+	padding: 0px 100px 50px 100px;
+	font-size: 15px;
+	line-height: 25px;
+	text-align: justify;
+}
+.about-column {
+	padding: 120px 0px 20px 100px;
+	font-size: 30px;
+}
+button.contact-button {
+	background-color: $background-color_1;
+	color: $color_2;
+	border: none;
+	border-radius: 2px;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+	font-family: $font-family_2;
+	margin-left: 100px;
+}
+.courses-summary {
+	padding: 20px;
+}
+.courses-section {
+	background-color: $background-color_2;
+	padding-bottom: 30px;
+}
+.summary-title {
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: 0.3s ease;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+.row-courses {
+	display: flex;
+	justify-content: space-between;
+}
+.row-footer {
+	color: $color_4;
+	display: flex;
+	justify-content: space-between;
+	background-color: $background-color_1;
+	padding: 0px 100px 0px 100px;
+}
+.column-courses {
+	flex: 1;
+	margin: 10px;
+	padding: 20px;
+}
+.courses-para {
+	font-size: 15px;
+	line-height: 25px;
+	text-align: justify;
+	background-color: $background-color_3;
+	border-radius: 5px;
+	padding: 10px;
+}
+.footer-para {
+	text-decoration: none;
+	color: $color_4;
+}
+i.fa.fa-map-marker {
+	padding-right: 10px;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+th {
+	border: 1px solid #ddd;
+	padding: 12px;
+	text-align: left;
+	background-color: $background-color_1;
+	color: $color_4;
+}
+td {
+	border: 1px solid #ddd;
+	padding: 12px;
+	text-align: left;
+}
+tr {
+	&:nth-child(even) {
+		background-color: $background-color_2;
+	}
+}
+input[type=text] {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+select {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+input[type=submit] {
+	background-color: $background-color_4;
+	color: $color_2;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	&:hover {
+		background-color: $background-color_5;
+	}
+}
+.container {
+	border-radius: 5px;
+	background-color: $background-color_2;
+	padding: 20px;
+}
+.contact-section {
+	width: 60%;
+	margin: 40px auto;
+}
+.audio-main {
+	width: 40%;
+	margin: 0 auto;
+	padding: 20px;
+}
+audio {
+	width: 100%;
+}
